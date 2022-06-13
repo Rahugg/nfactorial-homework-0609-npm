@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Games</title>
+
+</head>
+<body onload = "getvalue()" style="width :100vw; height:100vh" id = "SwitchButtons">
+    <div class="heading1">
+        <p>Games</p>
+    </div>
+    <div class="line">
+        <hr style="height:4px;border-width:0;color:black;background-color:black;"> 
+    </div>
+    <!--BOOTSTRAP VERTICAL NAVBAR-->
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a class = "navbar_font" data-toggle="tab"
+                href="#home">Home</a>
+            </li>
+            <li>
+                <a class = "navbar_font" data-toggle="tab"
+                href="#about">Madlibs</a>
+            </li>
+            <li>
+                <a class = "navbar_font" data-toggle="tab"
+                href="#team">Tom Thumb</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="home">
+                    <h3>HOME</h3>
+                </div>
+                <div class="background" >
+                    <div class="moving_square">
+                        <div class="motion_square"></div>
+                    </div>
+                    <div class="headings">
+                        <h2>WELCOME TO GAMES</h2>
+                    </div>
+                    <div class="headings">
+                        <h3>Choose a game above</h3>
+                    </div>
+                    <div class="buttons" >
+                        
+                            <button onclick="setWhiteTheme()" class ="button1">
+                            Set White Theme
+                            </button>
+                       
+                            <button onclick="setDarkTheme()" class ="button2">
+                            Set Dark Theme
+                            </button>
+                            <button onclick="setCookie()" class ="button3">
+                                Set Cookie
+                            </button>
+                        
+                    </div>
+                </div>
+                 
+            
+            </div>
+            <div id="about" class="tab-pane fade">
+                <div class="home">
+                    <h3>MAD LIBS</h3>
+                </div>
+                <div class="background">
+                    <div id="questions">
+                        <h1>Please fill out the following!</h1>
+                        <hr>
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="person">Girl's Name</label>
+                            <input id="person" class="form-control person" type="text" placeholder="Enter a girl's name ..">
+                          </div>
+                          <div class="form-group">
+                            <label for="adjective">Adjective</label>
+                            <input id="adjective" class="form-control adjective" type="text" placeholder="Enter an adjective ..">
+                          </div>
+                          <div class="form-group">
+                            <label for="noun">Plural noun</label>
+                            <input id="noun" class="form-control noun" type="text" placeholder="Enter a plural noun ..">
+                          </div>
+                          <div class="form-group">
+                            <label for="verb">A verb</label>
+                            <input id="verb" class="form-control verb" type="text" placeholder="Enter a verb ">
+                          </div>
+                          <div>
+                          </div>
+                        </form>
+                        <button id="btn-click" type="submit" class="btn btn-primary btn-lg">Generate!</button>
+                        <hr>
+                      </div>
+                      <div id="story">
+                        <h1>Result!</h1>
+                        
+                        <h3>I'm in love with <span class="person"></span>. She's so <span class="adjective"></span>!She has a good <span class="noun"></span>. I've fallen for her <span class="verb"></span>, and she shuffles for me, too. But I think she's got another boyfriend. What should I do?</h3>
+                        <div>
+                          <button type="submit" class="btn btn-primary btn-lg" id="play-btn">Play Again?</button>
+                        </div>
+                      </div>    
+                </div>
+                
+            </div>
+            <div id="team" class="tab-pane fade">
+                <div class="home">
+                    <h3>TOM THUMB</h3>
+                </div>
+                <div class="background">
+                    <form class = "formm" role="form">
+                        <div class="form-group">
+                            <label for="imgwidth">Image width(px):</label>
+                            <input id="imgwidth" class="form-control imgwidth" type="text" placeholder="Enter a width of picture ..">
+                        </div>
+                        <div class="form-group">
+                            <label for="imgheight">Image height(px):</label>
+                            <input id="imgheight" class="form-control imgheight" type="text" placeholder="Enter a height of picture ..">
+                        </div>
+                        <div class="form-group">
+                            <label for="NumberofColors">Number of Colors:</label>
+                            <input id="NumberofColors" class="form-control NumberofColors" type="text" placeholder="Enter a Number of colors ..">
+                        </div>
+                      </form> 
+                      <button id="btn-click2" type="submit2" class="btn btn-primary btn-lg2">Calculate!</button>
+                      <hr>
+                      <div id="size">
+                        <h1>Result!</h1>
+                        <hr>
+                        <h3>File is <span class = "NumberofColors"></span>KB which is OK!</h3>
+                        <div>
+                          <button type= "submit2" class="btn btn-primary btn-lg2" id="play-btn2">Again</button>
+                        </div>
+                      </div>    
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src = "./js/index.js"></script>
+</body>
+</html>

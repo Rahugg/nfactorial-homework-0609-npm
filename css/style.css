@@ -1,0 +1,110 @@
+body{
+    background-color: gray;
+}
+
+/* CHANGING 'GAMES' */
+.heading1{
+    display: flex;
+    justify-content: center;
+    font-weight:bold;
+    font-size: 60px;
+    font-family: 'times new roman',
+}
+/*resizing the font*/
+.navbar_font{
+    font-size: 25px;
+    color:goldenrod;
+}
+/* GIVING A COLOR */
+.home{
+    display: flex;
+    justify-content: center;
+    -webkit-text-stroke: 2px gold;
+    font-family: arial; color:gold;
+    text-shadow: 0 0 2px goldenrod;
+    margin: 10px;
+}
+.background{
+    height:900px;
+    width:1140px;
+    background-color: darkolivegreen;
+}
+.light{
+    background-color: lightgreen;
+}
+.dark{
+    background-color: black;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.button1{
+    color:beige;
+    background-color:gray;
+}
+.button2{
+    color:beige;
+    background-color:gray;
+}
+.button3{
+    color:beige;
+    background-color:gray;
+}
+.button1:hover{
+    color:gray;
+    background-color:beige;
+}
+.button2:hover{
+    color:gray;
+    background-color:beige;
+}
+.button3:hover{
+    color:gray;
+    background-color:beige;
+}
+.headings{
+    -webkit-text-stroke: 2px beige;
+    font-family: arial; color:beige;
+    text-shadow: 0 0 2px beige;
+    display:flex;
+    justify-content: center;
+}
+/*square*/
+.moving_square{
+  position: absolute;
+  top:80%;
+  left:50%;
+}
+.motion_square{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: square;
+    position: relative;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes square{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+    0%   {background-color:red; left:0px; top:0px;}
+    33%  {background-color:yellow; left:-400px; top:-200px;}
+    67%  {background-color:blue; left:400px; top:-200px;}
+    100% {background-color:red; left:0px; top:0px;} 
+}
+
+/* MAD LIBS */
+.formm{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    padding: auto;
+
+}
+
